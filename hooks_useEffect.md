@@ -37,8 +37,6 @@ const Context = createContext();
 export default function App() {
   const [state, dispatch] = useReducer(appReducer, []);
 
-  const didRun = useRef(false);
-
   useEffect(() => {
     const raw = localStorage.getItem("data");
     dispatch({ type: "reset", payload: JSON.parse(raw) });
