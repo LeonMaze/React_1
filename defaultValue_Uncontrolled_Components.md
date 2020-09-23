@@ -25,7 +25,7 @@ class NameForm extends React.Component {
         <br />
         <label>
           Name:
-          <input defaultValue="Боб" type="text" ref={this.input} />
+          <input defaultValue="Bob" type="text" ref={this.input} />
         </label>
         <input type="submit" value="Submit" />
       </form>
